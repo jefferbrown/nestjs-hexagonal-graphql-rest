@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserEntity {
+  id: Int!
+  first_name: String
+  last_name: String
+}
+
+type Query {
+  getUserById(id: GetUserByIdInput!): UserEntity!
+}
+
+input GetUserByIdInput {
+  id: Int!
+}
